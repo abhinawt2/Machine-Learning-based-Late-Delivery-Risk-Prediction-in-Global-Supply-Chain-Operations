@@ -9,9 +9,8 @@ from sklearn.ensemble import RandomForestClassifier
 
 def load_and_train_model():
     # Load dataset
- file_id = "1IgsHyQiHbCQde8HRQad5B8pP9AZbpSPw"
-url = https://github.com/abhinawt2/Machine-Learning-based-Late-Delivery-Risk-Prediction-in-Global-Supply-Chain-Operations/releases/download/V1.0/APL_Logistics.csv
-df = pd.read_csv(url, encoding="latin1")
+    url = "https://github.com/abhinawt2/Machine-Learning-based-Late-Delivery-Risk-Prediction-in-Global-Supply-Chain-Operations/releases/download/v1.0/APL_Logistics.csv"
+    df = pd.read_csv(url, encoding="latin1")
 
     # Feature Engineering
     df['Shipping_Pressure_Index'] = df['Days for shipment (scheduled)'] / (df['Order Item Quantity'] + 1)
