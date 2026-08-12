@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 def load_and_train_model():
     # Load dataset
  file_id = "1IgsHyQiHbCQde8HRQad5B8pP9AZbpSPw"
-url = sha256:f0eb8308bbf8b80df166cc3828b1efb12956ac08be0e99f71c8ddf811664f685
+url = https://github.com/abhinawt2/Machine-Learning-based-Late-Delivery-Risk-Prediction-in-Global-Supply-Chain-Operations/releases/download/V1.0/APL_Logistics.csv
 df = pd.read_csv(url, encoding="latin1")
 
     # Feature Engineering
