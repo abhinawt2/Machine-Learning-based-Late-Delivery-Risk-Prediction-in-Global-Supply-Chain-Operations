@@ -9,7 +9,9 @@ from sklearn.ensemble import RandomForestClassifier
 
 def load_and_train_model():
     # Load dataset
-    df = pd.read_csv('APL_Logistics (1).csv', encoding='latin1')
+ file_id = "1IgsHyQiHbCQde8HRQad5B8pP9AZbpSPw"
+url = f"https://drive.google.com/uc?export=download&id={file_id}"
+df = pd.read_csv(url, encoding="latin1")
 
     # Feature Engineering
     df['Shipping_Pressure_Index'] = df['Days for shipment (scheduled)'] / (df['Order Item Quantity'] + 1)
