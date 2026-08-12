@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 def load_and_train_model():
     # Load dataset
  file_id = "1IgsHyQiHbCQde8HRQad5B8pP9AZbpSPw"
-url = f"https://drive.google.com/uc?export=download&id={file_id}"
+url = sha256:f0eb8308bbf8b80df166cc3828b1efb12956ac08be0e99f71c8ddf811664f685
 df = pd.read_csv(url, encoding="latin1")
 
     # Feature Engineering
