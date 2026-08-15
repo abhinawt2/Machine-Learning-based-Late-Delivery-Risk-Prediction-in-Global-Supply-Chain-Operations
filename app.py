@@ -66,6 +66,6 @@ if not sample_df.empty:
     high_risk_queue = sample_df[sample_df['Late_Delivery_Probability'] >= risk_threshold]
     
     st.write(f"Showing **{len(high_risk_queue)}** orders exceeding risk threshold of **{risk_threshold}**:")
-    st.dataframe(high_risk_queue[['Customer Fname', 'Customer Lname', 'Shipping Mode', 'Market', 'Late_Delivery_Probability', 'Order Region']])
+    st.dataframe(high_risk_queue[['Shipping Mode', 'Market', 'Late_Delivery_Probability', 'Order Region']])
 else:
     st.info("Adjust filters to view order queue.")
